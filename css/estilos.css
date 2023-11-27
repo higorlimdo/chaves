@@ -1,0 +1,102 @@
+:root {
+  --cinza: #0b0202f2;
+  --vermelha: #4b93279c;
+  --vermelha-escura: #ffffff8c;
+  --branca: #fff;
+  --luz: rgb(249 249 249);
+  --orange: #ffffff;
+}
+
+
+body { 
+  align-items: center;
+  background-image: url(https://www.itl.cat/pngfile/big/283-2834178_chaves-dentro-do-barril.jpg);
+  background-size: 2000px 1100px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  color:  #fff0;
+  margin-bottom: 40px;
+  font-size: 6rem;
+  box-shadow: 1px 1px 10px var(--lu);
+  background: url(https://seeklogo.com/images/C/chaves-logo-A0E0A6F56E-seeklogo.com.png);
+  background-repeat: no-repeat;
+  background-size: 500px 100px
+}
+
+.teclado {
+  background: url(https://img.elo7.com.br/product/original/47A1FA0/camiseta-chaves-1-peca-chiquinha.jpg);
+  background-size: 900px 1000px;
+  background-position: -240px -180px;
+  background-repeat: no-repeat;
+  box-shadow: -1px -1px 1px #000000, 20px 20px 5px #000000eb;
+  border-radius: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+.tecla {
+  background-color: #4b9327;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px 0 var(--cinza);
+  color: var(--orange);
+  cursor: pointer;
+  height: 120px;
+  width: 120px;
+}
+
+.tecla.ativa,
+.tecla:active {
+  background-color: var(--vermelha);
+  border: 4px solid  var(--vermelha);
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
+  color: var(--branca);
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px var(--luz);
+}
+
+.tecla.active:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+}
+
+.tecla_title{
+  color: var(--orange);
+}
+.tecla_title, .tecla_2, .tecla_3 {
+    display: block;
+
+    padding: 0;
+    margin: 0;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.tecla_title {
+    font-weight: bold;
+    color: var(--orange)
+}
+
+.tecla_2{
+    font-weight: bold;
+      100%;
+}
+
+.tecla_3 {
+    font-weight: bold;
+      100%;
+}
+
